@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="366px" height="215px" viewBox="0 0 366 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>popup</title>
+    <defs>
+        <filter x="-13.2%" y="-26.1%" width="126.5%" height="152.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.318837413   0 0 0 0 1  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup" filter="url(#filter-1)" transform="translate(30.000000, 30.000000)">
+            <rect id="Combined-Shape" filter="url(#filter-2)" x="0" y="0" width="306" height="155" rx="2"></rect>
+            <rect id="Rectangle" fill="#48C774" x="28" y="45" width="232" height="24" rx="2"></rect>
+            <text id="/Computer-Science/Pr" font-family="Avenir-Book, Avenir" font-size="12" font-weight="normal" fill="#FFFFFF">
+                <tspan x="53" y="61">/Computer Science/Programming</tspan>
+            </text>
+            <text id="Category:" font-family="Avenir-Book, Avenir" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="28" y="34">Category:</tspan>
+            </text>
+            <text id="Tags:" font-family="Avenir-Book, Avenir" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="29" y="95">Tags:</tspan>
+            </text>
+            <rect id="Rectangle" fill="#077CFF" x="28" y="106" width="84" height="24" rx="2"></rect>
+            <text id="javascript" font-family="Avenir-Book, Avenir" font-size="12" font-weight="normal" fill="#FFFFFF">
+                <tspan x="44" y="122">javascript</tspan>
+            </text>
+            <rect id="Rectangle-Copy" fill="#077CFF" x="129" y="106" width="84" height="24" rx="2"></rect>
+            <text id="array" font-family="Avenir-Book, Avenir" font-size="12" font-weight="normal" fill="#FFFFFF">
+                <tspan x="158" y="122">array</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

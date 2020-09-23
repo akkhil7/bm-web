@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="125px" viewBox="0 0 400 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="400" height="125"></rect>
+            <rect id="Rectangle" fill="#CEFFD3" x="61" y="15" width="285" height="25"></rect>
+            <rect id="Rectangle" fill="#CEFFD3" x="21" y="40" width="305" height="25"></rect>
+            <text id="I-need-it-here,-not" font-family="Georgia" font-size="21" font-weight="normal" fill="#484848">
+                <tspan x="23" y="34">I need it here, not in another place </tspan>
+                <tspan x="23" y="58">(no content scripts and no script </tspan>
+                <tspan x="23" y="82">injection). How do I get the </tspan>
+                <tspan x="23" y="106">tabWindowObject in extension.js? In </tspan>
+                <tspan x="23" y="130"></tspan>
+            </text>
+        </g>
+    </g>
+</svg>
