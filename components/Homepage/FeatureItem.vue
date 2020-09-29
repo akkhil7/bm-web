@@ -36,6 +36,8 @@ export default {
  }
  .img-container {
    text-align: center;
+   position: relative;
+   z-index: 100;
    img {
      border-radius: 10px;
      border:1px solid rgba(0,0,0,0.15);

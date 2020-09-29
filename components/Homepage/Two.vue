@@ -1,5 +1,16 @@
 <template>
   <section class="wrapper section">
+    <div class="bg-square">
+      <svg viewBox="0 0 631 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Group</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Group">
+                  <rect id="Rectangle" stroke="#B499DF" fill="#CEC9FF" transform="translate(348.000000, 64.500000) scale(-1, 1) translate(-348.000000, -64.500000) " x="65.5" y="0.5" width="565" height="128"></rect>
+                  <rect id="Rectangle" stroke="#EE8846" fill-opacity="0.5" fill="#FFE2D2" x="0.5" y="105.5" width="492" height="47"></rect>
+              </g>
+          </g>
+      </svg>
+    </div>
     <div class="container">
       <div class="columns is-multiline is-vcentered">
         <div v-for="(item,index) in items" :key="index" class="feature-item column is-10 is-offset-1">
@@ -10,8 +21,18 @@
             :subtitle="item.subtitle"
           />
         </div>
-          
       </div>
+    </div>
+    <div class="bg-square-reverse">
+      <svg viewBox="0 0 631 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Group</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Group">
+                  <rect id="Rectangle" stroke="#B499DF" fill="#CEC9FF" transform="translate(348.000000, 64.500000) scale(-1, 1) translate(-348.000000, -64.500000) " x="65.5" y="0.5" width="565" height="128"></rect>
+                  <rect id="Rectangle" stroke="#EE8846" fill-opacity="0.5" fill="#FFE2D2" x="0.5" y="105.5" width="492" height="47"></rect>
+              </g>
+          </g>
+      </svg>
     </div>
   </section>
 </template>
@@ -21,9 +42,29 @@
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+.bg-square {
+  position: relative;
+  svg {
+    position: absolute;
+    left: -20vw;
+    opacity: 0.15;
+    width: 60vw;
+    transform: skew(0deg, 20deg)
+  }
+}
+.bg-square-reverse {
+  position: relative;
+  svg {
+    position: absolute;
+    right: -20vw;
+    opacity: 0.15;
+    width: 60vw;
+    transform: skew(0deg, 20deg)
+  }
+}
 .feature-item  {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 </style>
 
