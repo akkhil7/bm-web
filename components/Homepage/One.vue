@@ -1,3 +1,23 @@
+<script>
+export default {
+  data() {
+    return {
+      showMenu: false,
+    }
+  },
+  computed: {
+    shouldShowMenu() {
+      const breakpoints = ['sm', 'md', 'lg']
+      return breakpoints.includes(this.$mq) ? this.showMenu : true
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu
+    }
+  }
+}
+</script>
 <template>
   <section class="section hero bg-gradient is-fullheight">
   <div class="svg-bg"></div>
@@ -7,28 +27,30 @@
         <div class="navbar-brand">
           <img src="~assets/icon_128.png" class="logo" alt="Logo">
           <p class="logo--text">Markie</p>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+          <span @click="toggleMenu" class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Features
-            </a>
-            <a class="navbar-item">
-              Pricing
-            </a>
-            <a class="navbar-item">
-              Support
-            </a>
-            <b-button class="navbar-item sign-in-btn">
-              Sign In / Register
-            </b-button>
+        <transition name="nav-slide">
+          <div v-show="shouldShowMenu" id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Features
+              </a>
+              <a class="navbar-item">
+                Pricing
+              </a>
+              <a class="navbar-item">
+                Support
+              </a>
+              <b-button class="navbar-item sign-in-btn">
+                Sign In / Register
+              </b-button>
+            </div>
           </div>
-        </div>
+        </transition>
       </div>
     </header>
     </div>
@@ -36,18 +58,23 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column is-narrow">
+      <div class="columns is-multiline is-vcentered">
+        <div class="column is-12-tablet is-6-desktop">
           <h1 class="title">
             Intelligent <br /> bookmarking <br />
             for everyone
           </h1>
-          <h2 class="subtitle">
+          <mq-layout mq="hd+">
             <b-button class="get-markie-btn"> Download for Chrome →</b-button>
-          </h2>
+          </mq-layout>
         </div>
-        <div class="column preview-container">
+        <div class="column is-12-tablet is-6-desktop preview-container">
           <img src="~assets/Demo_1.svg" class="demo-img" alt="Markie AI Preview" />
+        </div>
+        <div class="column is-12-tablet is-6-desktop">
+          <mq-layout :style="{ textAlign: 'center' }" :mq="['sm', 'md', 'lg']">
+            <b-button class="get-markie-btn"> Download for Chrome →</b-button>
+          </mq-layout>
         </div>
       </div>
     </div>
@@ -62,8 +89,53 @@
   background-image: linear-gradient(316deg, #635bff 0%, #552fbc 14%, #190F26 90%),;
 }
 
+.navbar-brand, .navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  .navbar-item {
+    color: #fff;
+    margin: 0.5em;
+    background-color: transparent;
+  }
+  .navbar-item:hover {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+}
+
+.navbar {
+  .navbar-menu {
+    overflow: hidden;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 1em;
+    background-color: transparent;
+    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.2);
+    @media (min-width: 1024px) {
+      padding: 0;
+      margin: 0;
+      box-shadow: none;  
+    }
+  }
+  .navbar-burger {
+    color: white;
+  }
+}
+
+.nav-slide-enter-active, .nav-slide-leave-active {
+  transition: all .5s;
+}
+.nav-slide-enter, .nav-slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  height: 0;
+  padding: 0;
+  box-shadow: none;
+  transform: skewX(-20deg) translateY(-50px);
+}
 .sign-in-btn {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1) !important;
   font-weight: 600;
   border: none;
 }
@@ -78,7 +150,10 @@
 }
 
 .preview-container {
-  text-align: right;
+  text-align: center;
+  @media (min-width: 1024) {
+    text-align: right;
+  }
   .demo-img {
     box-shadow: 0 0 100px 0 rgba(255,255,255,0.4), 0 50px 30px -10px rgba(0, 0, 0, 0.35);
     border-radius: 12px;
@@ -86,6 +161,8 @@
 }
 
 .get-markie-btn {
+  margin: 1em 0;
+  text-align: center;
   background-color: #fb8332;
   color: white;
   font-weight: 500;
@@ -124,28 +201,19 @@
   margin-left: 0.5em;
 }
 
-.navbar-brand, .navbar-menu {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-menu {
-  .navbar-item {
-    color: #fff;
-    margin: 0 0.5em;
-  }
-  .navbar-item:hover {
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 5px;
-  }
-}
-
 .hero-body {
   .title, .subtitle {
     color: white;
   }
   .title {
-    font-size: 5em;
+    font-size: 4em;
+    text-align: center;
+    @media (min-width: 600px) {
+      font-size: 5em;
+    }
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
   }
   .subtitle {
     color: whitesmoke;
