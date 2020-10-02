@@ -209,7 +209,7 @@ export default {
   .title {
     font-size: 4em;
     text-align: center;
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       font-size: 5em;
     }
     @media (min-width: 1024px) {
