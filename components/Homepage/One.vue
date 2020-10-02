@@ -127,6 +127,7 @@ export default {
       width: 20px;
       color: white !important;
     }
+    
     color: white !important;
   }
 }
