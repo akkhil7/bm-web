@@ -90,13 +90,6 @@ export default {
   background-image: linear-gradient(316deg, #635bff 0%, #552fbc 14%, #190F26 90%),;
 }
 
-.navbar-burger {
-  span {
-    height: 2px;
-    width: 20px;
-  }
-}
-
 .navbar-brand, .navbar-menu {
   display: flex;
   align-items: center;
@@ -129,7 +122,12 @@ export default {
     }
   }
   .navbar-burger {
-    color: white;
+    span {
+      height: 2px;
+      width: 20px;
+      color: white !important;
+    }
+    color: white !important;
   }
 }
 
