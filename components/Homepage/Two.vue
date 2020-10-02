@@ -49,7 +49,7 @@
     left: -20vw;
     opacity: 0.15;
     width: 60vw;
-    transform: skew(0deg, 20deg)
+    transform: skew(0deg, 20deg) translate3d(0,0,0);
   }
 }
 .bg-square-reverse {
@@ -59,7 +59,7 @@
     right: -20vw;
     opacity: 0.15;
     width: 60vw;
-    transform: skew(0deg, 20deg)
+    transform: skew(0deg, 20deg) translate3d(0,0,0);
   }
 }
 .feature-item  {
