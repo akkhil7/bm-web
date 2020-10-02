@@ -26,7 +26,8 @@
     "@nuxt/typescript-runtime": "^2.0.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.5",
-    "nuxt-buefy": "^0.4.3"
+    "nuxt-buefy": "^0.4.3",
+    "nuxt-mq": "^2.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",

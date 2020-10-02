@@ -31,6 +31,19 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
+    [
+      'nuxt-mq',
+      {
+        // Default breakpoint for SSR
+        defaultBreakpoint: 'sm',
+        breakpoints: {
+          sm: 450,
+          md: 768,
+          lg: 1024,
+          hd: Infinity
+        }
+      }
+    ]
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
