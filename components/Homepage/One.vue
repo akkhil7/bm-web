@@ -127,7 +127,7 @@ export default {
       width: 20px;
       color: white !important;
     }
-    
+
     color: white !important;
   }
 }
@@ -214,7 +214,7 @@ export default {
     color: white;
   }
   .title {
-    font-size: 3.5em;
+    font-size: 3em;
     text-align: center;
     @media (min-width: 768px) {
       font-size: 4em;
