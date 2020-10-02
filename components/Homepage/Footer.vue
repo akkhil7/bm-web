@@ -1,33 +1,33 @@
 <template>
   <section class="wrapper section">
     <div class="container">
-      <div class="columns is-multiline is-vcentered">
+      <div class="columns is-mobile is-multiline is-vcentered">
         <div class="column is-10 is-offset-1">
-          <div class="columns">
-            <div class="footer-item column is-one-fifth">
+          <div class="columns is-mobile is-multiline">
+            <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Downloads</h6>
               <p class="sub-category">for Chrome</p>
               <p class="sub-category">for Firefox <em>(soon)</em></p>
               <p class="sub-category">for Edge <em>(soon)</em></p>
             </div>
-            <div class="footer-item column is-one-fifth">
+            <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Resources</h6>
               <p class="sub-category">Features</p>
               <p class="sub-category">Report a bug</p>
             </div>
-            <div class="footer-item column is-one-fifth">
+            <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Company</h6>
               <p class="sub-category">About</p>
               <p class="sub-category">Careers</p>
               <p class="sub-category">Blog</p>
             </div>
-            <div class="footer-item column is-one-fifth">
+            <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Follow Us</h6>
               <p class="sub-category"> Twitter</p>
               <p class="sub-category"> Instagram</p>
               <p class="sub-category"> Facebook</p>
             </div>
-            <div class="footer-item column is-one-fifth">
+            <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Legal</h6>
               <p class="sub-category"> Privacy Policy</p>
               <p class="sub-category"> Terms & Conditions</p>
