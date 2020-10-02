@@ -151,7 +151,7 @@ export default {
 
 .preview-container {
   text-align: center;
-  @media (min-width: 1024) {
+  @media (min-width: 1024px) {
     text-align: right;
   }
   .demo-img {
