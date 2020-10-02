@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isReverse" class="columns is-vcentered">
+  <div v-if="!isReverse || isMobile" class="columns is-vcentered">
     <div class="column is-6">
       <div class="text-content">
         <h1 class="title">{{ title }}</h1>
@@ -26,6 +26,12 @@
 <script>
 export default {
   props: ['isReverse', 'img', 'title', 'subtitle'],
+  computed: {
+    isMobile() {
+      const breakpoints = ['sm', 'md']
+      return breakpoints.includes(this.$mq)
+    }
+  }
 }
 </script>
 
