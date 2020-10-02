@@ -47,9 +47,13 @@
   svg {
     position: absolute;
     left: -20vw;
-    opacity: 0.15;
+    opacity: 0.25;
     width: 60vw;
+    min-width: 400px;
     transform: skew(0deg, 20deg) translate3d(0,0,0);
+    @media (min-width: 768px) {
+      opacity: 0.15;
+    }
   }
 }
 .bg-square-reverse {
@@ -57,9 +61,13 @@
   svg {
     position: absolute;
     right: -20vw;
-    opacity: 0.15;
+    opacity: 0.25;
     width: 60vw;
+    min-width: 400px;
     transform: skew(0deg, 20deg) translate3d(0,0,0);
+    @media (min-width: 768px) {
+      opacity: 0.15;
+    }
   }
 }
 .feature-item  {
