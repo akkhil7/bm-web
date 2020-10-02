@@ -215,12 +215,13 @@ export default {
     color: white;
   }
   .title {
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
     @media (min-width: 768px) {
-      font-size: 5em;
+      font-size: 4em;
     }
     @media (min-width: 1024px) {
+      font-size: 5em;
       text-align: left;
     }
   }
