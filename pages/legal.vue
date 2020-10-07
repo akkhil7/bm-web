@@ -39,6 +39,7 @@
       </div>
     </section>
     <section>
+      <div class="container">
       <div class="columns">
         <div class="column is-narrow">
           <div class="sidebar">
@@ -46,6 +47,7 @@
               v-for="item in items"
               :key="item.key"
               @click="selectOption(item.key)"
+              :class="getClass(item.key)"
             >
               <span>{{ item.label }}</span>
             </h3>
@@ -57,6 +59,7 @@
           <CookiePolicy v-else-if="selected === 'cookie'" />
           <Disclaimer v-else />
         </div>
+      </div>
       </div>
     </section>
   </div>
@@ -100,7 +103,10 @@ export default {
     },
     toggleMenu() {
       this.showMenu = !this.showMenu
-    }
+    },
+    getClass(key) {
+      return this.selected === key ? 'active' : ''
+    },
   },
 }
 </script>
@@ -205,11 +211,15 @@ export default {
 }
 .sidebar {
   padding: 2em;
+  padding-left: 0;
   box-shadow: 10px -10px 10px -5px rgba(0,0,0,0.1);
   h3 {
     font-size: 1.5em;
     cursor: pointer;
     margin: 1em 0;
+  }
+  h3:hover, .active {
+    color: #635bff;
   }
 }
 
