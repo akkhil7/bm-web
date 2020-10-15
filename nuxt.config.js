@@ -1,11 +1,12 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Markie',
+    title: 'Markie - Intelligent bookmarking solution for everyone',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Markie takes care of bookmarking for you with automatic categorisation, automatic tagging, highlighting and much more. Sign up for free today.' },
+      { name: 'keywords', content: 'bookmarking, tagging, bookmarks, categorize, highlight'}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -14,7 +15,11 @@ export default {
   css: ['~/assets/css/global'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: process.env.NODE_ENV === 'production' ? [{ src: '~plugins/ga.js', mode: 'client' }] : [],
+
+  plugins: process.env.NODE_ENV === 'production' ? [
+    { src: '~plugins/ga.js', mode: 'client' },
+    { src: '~plugins/drift.js', mode:'client' }
+  ] : [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
