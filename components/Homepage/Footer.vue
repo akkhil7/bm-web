@@ -7,8 +7,8 @@
             <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Downloads</h6>
               <p class="sub-category">for Chrome</p>
-              <p class="sub-category">for Firefox <em>(soon)</em></p>
-              <p class="sub-category">for Edge <em>(soon)</em></p>
+              <p class="sub-category">for Firefox></p>
+              <p class="sub-category">for Edge</p>
             </div>
             <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Resources</h6>
@@ -29,8 +29,10 @@
             </div>
             <div class="footer-item column is-half-mobile is-one-third-tablet is-one-fifth-desktop">
               <h6 class="title">Legal</h6>
-              <p class="sub-category"> Privacy Policy</p>
-              <p class="sub-category"> Terms & Conditions</p>
+              <p class="sub-category"> Terms of Service</p>
+              <p class="sub-category"> Privacy Policy</p>              
+              <p class="sub-category"> Cookie Policy</p>
+              <p class="sub-category"> Disclaimer</p>
             </div>
           </div>
         </div>
