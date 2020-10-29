@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Navbar />
     <One />
     <Two />
     <Three />
