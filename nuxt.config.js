@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   server: {
-    port: 6001, // default: 3000
+    port: process.env.NODE_ENV === 'development' ? 6001 : 3000, // default: 3000
     host: '0.0.0.0', // default: localhost
   },
   env: {
