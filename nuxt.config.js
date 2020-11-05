@@ -80,7 +80,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BM_YOGA_URL,
+        httpEndpoint: `${process.env.BM_YOGA_URL}/graphql`,
         httpLinkOptions: {
           credentials: 'include',
         },
