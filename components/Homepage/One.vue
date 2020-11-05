@@ -1,8 +1,7 @@
 <template>
   <section class="section hero bg-gradient is-fullheight">
     <div class="svg-bg"></div>
-    <div class="hero-head">
-    </div>
+    <div class="hero-head"></div>
 
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
@@ -15,7 +14,9 @@
               for everyone
             </h1>
             <mq-layout mq="hd+">
-              <b-button class="get-markie-btn"> Download for Chrome →</b-button>
+              <b-button :class="downloadButtonStyle" @click="onDownloadClick">
+                {{ downloadMsg }} →</b-button
+              >
             </mq-layout>
           </div>
           <div class="column is-12-tablet is-6-desktop preview-container">
@@ -30,7 +31,9 @@
               :style="{ textAlign: 'center' }"
               :mq="['sm', 'md', 'lg']"
             >
-              <b-button class="get-markie-btn"> Download for Chrome →</b-button>
+              <b-button :class="downloadButtonStyle" @click="onDownloadClick">
+                {{ downloadMsg }} →</b-button
+              >
             </mq-layout>
           </div>
         </div>
@@ -38,7 +41,6 @@
     </div>
   </section>
 </template>
-
 
 <style lang="scss" scoped>
 .bg-gradient {
@@ -104,6 +106,11 @@
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02);
 }
 
+.no-support-btn {
+  background-color: white;
+  color: #6030e1;
+}
+
 .download-btn {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -146,3 +153,51 @@
 
 //primary - #635BFF
 </style>
+
+<script>
+export default {
+  computed: {
+    supportedBrowsers() {
+      return ['chrome', 'firefox', 'edge']
+    },
+    browserName() {
+      return this.$detectBrowser
+    },
+    downloadMsg() {
+      switch (this.browserName) {
+        case 'chrome':
+          return 'Download for Chrome'
+        case 'firefox':
+          return 'Download for Firefox'
+        case 'edge':
+          return 'Download for Edge'
+        default:
+          return 'Your browser is not supported by Markie'
+      }
+    },
+    downloadButtonStyle() {
+      if (this.supportedBrowsers.includes(this.browserName)) {
+        return 'get-markie-btn'
+      } else {
+        return 'get-markie-btn no-support-btn'
+      }
+    },
+  },
+  methods: {
+    onDownloadClick() {
+      switch (this.browserName) {
+        case 'chrome':
+          window.open(process.env.CHROME_EXT_LINK, '_blank')
+          break
+        case 'firefox':
+          window.open(process.env.MOZ_EXT_LINK, '_blank')
+          break
+        case 'edge':
+          window.open(process.env.EDGE_EXT_LINK, '_blank')
+          break
+        default:
+      }
+    },
+  },
+}
+</script>
