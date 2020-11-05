@@ -4,15 +4,19 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group">
             <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="400" height="125"></rect>
-            <rect id="Rectangle" fill="#CEFFD3" x="61" y="15" width="285" height="25"></rect>
-            <rect id="Rectangle" fill="#CEFFD3" x="21" y="40" width="305" height="25"></rect>
-            <text id="I-need-it-here,-not" font-family="Georgia" font-size="21" font-weight="normal" fill="#484848">
-                <tspan x="23" y="34">I need it here, not in another place </tspan>
-                <tspan x="23" y="58">(no content scripts and no script </tspan>
-                <tspan x="23" y="82">injection). How do I get the </tspan>
-                <tspan x="23" y="106">tabWindowObject in extension.js? In </tspan>
-                <tspan x="23" y="130"></tspan>
-            </text>
+            <g id="Group-2" transform="translate(17.000000, 14.000000)">
+                <g id="paragraph/1col" opacity="0.853631882" transform="translate(7.000000, 7.000000)" fill="#272727" fill-rule="nonzero">
+                    <g id="Group-2" opacity="0.1">
+                        <rect id="Rectangle" x="0" y="0" width="359.844323" height="9.96442793"></rect>
+                        <rect id="Rectangle" x="0" y="19.9288559" width="359.844323" height="9.96442793"></rect>
+                        <rect id="Rectangle" x="0" y="39.8577117" width="359.844323" height="9.96442793"></rect>
+                        <rect id="Rectangle" x="0" y="59.7865676" width="359.844323" height="9.96442793"></rect>
+                        <rect id="Rectangle" x="0" y="79.7154235" width="266.378265" height="9.96442793"></rect>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#66FF76" opacity="0.489234561" x="40" y="0" width="285" height="22"></rect>
+                <rect id="Rectangle" fill="#66FF76" opacity="0.489234561" x="0" y="22" width="305" height="22"></rect>
+            </g>
         </g>
     </g>
 </svg>
