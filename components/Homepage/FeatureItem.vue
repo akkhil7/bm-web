@@ -35,7 +35,7 @@ export default {
       default: false,
     },
     img: {
-      type: Image,
+      type: String,
       default: '',
     },
     title: {
