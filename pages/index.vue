@@ -2,14 +2,15 @@
   <div>
     <Navbar />
     <One />
-    <Two />
+    <Two id="features" />
+    <Faq id="faq" />
     <Three />
     <Footer />
   </div>
 </template>
 
 <script>
-export default {  
+export default {
   name: 'Homepage',
 }
 </script>
