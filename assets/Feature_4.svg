@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="405px" height="234px" viewBox="0 0 405 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="99" height="37" rx="5"></rect>
+        <filter x="-7.1%" y="-13.5%" width="114.1%" height="137.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.157807037 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="99" height="37" rx="5"></rect>
+        <filter x="-7.1%" y="-13.5%" width="114.1%" height="137.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.157807037 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="99" height="37" rx="5"></rect>
+        <filter x="-7.1%" y="-13.5%" width="114.1%" height="137.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.157807037 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="99" height="37" rx="5"></rect>
+        <filter x="-7.1%" y="-13.5%" width="114.1%" height="137.8%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.157807037 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="0" width="99" height="37" rx="5"></rect>
+        <filter x="-7.1%" y="-13.5%" width="114.1%" height="137.8%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.157807037 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="0" y="0" width="99" height="37" rx="5"></rect>
+        <filter x="-7.1%" y="-13.5%" width="114.1%" height="137.8%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.157807037 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(19.000000, 18.000000)">
+            <g id="user-solid" transform="translate(151.000000, 66.000000)" fill="#C4C4C4" fill-rule="nonzero">
+                <path d="M30,34 C39.46875,34 47.1428571,26.3898437 47.1428571,17 C47.1428571,7.61015625 39.46875,0 30,0 C20.53125,0 12.8571429,7.61015625 12.8571429,17 C12.8571429,26.3898437 20.53125,34 30,34 Z M42,38.25 L39.7633929,38.25 C36.7901786,39.6046875 33.4821429,40.375 30,40.375 C26.5178571,40.375 23.2232143,39.6046875 20.2366071,38.25 L18,38.25 C8.0625,38.25 0,46.2453125 0,56.1 L0,61.625 C0,65.1445312 2.87946429,68 6.42857143,68 L53.5714286,68 C57.1205357,68 60,65.1445312 60,61.625 L60,56.1 C60,46.2453125 51.9375,38.25 42,38.25 Z" id="Shape"></path>
+            </g>
+            <g id="Feature_3" transform="translate(0.000000, 27.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group" transform="translate(10.392265, 5.441176)">
+                    <g id="paragraph/1col" transform="translate(0.000000, 8.146650)" fill="#D8D8D8" fill-rule="nonzero">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="4.11446987" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="8.22893972" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="12.3434096" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="16.4578795" width="57.8997632" height="2.05723493"></rect>
+                        </g>
+                    </g>
+                    <g id="Field">
+                        <g id="path-2-link" fill="#FFFFFF">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <rect id="Rectangle" stroke="#B9B9B9" stroke-width="0.5" fill="#F57171" x="0.0620757695" y="0.0617170479" width="78.0913181" height="4.81392974" rx="2.40696487"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Feature_3-Copy-2" transform="translate(0.000000, 134.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-3"></use>
+                </g>
+                <g id="Group" transform="translate(10.392265, 5.441176)">
+                    <g id="paragraph/1col" transform="translate(0.000000, 8.146650)" fill="#D8D8D8" fill-rule="nonzero">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="4.11446987" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="8.22893972" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="12.3434096" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="16.4578795" width="57.8997632" height="2.05723493"></rect>
+                        </g>
+                    </g>
+                    <g id="Field" fill="#FFFC69">
+                        <rect id="Rectangle" x="0.0620757695" y="0.0617170479" width="78.0913181" height="4.81392974" rx="2.40696487"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Feature_3-Copy-4" transform="translate(131.000000, 161.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-5"></use>
+                </g>
+                <g id="Group" transform="translate(10.392265, 5.441176)">
+                    <g id="paragraph/1col" transform="translate(0.000000, 8.146650)" fill="#D8D8D8" fill-rule="nonzero">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="4.11446987" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="8.22893972" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="12.3434096" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="16.4578795" width="57.8997632" height="2.05723493"></rect>
+                        </g>
+                    </g>
+                    <g id="Field">
+                        <g id="path-2-link" fill="#FFFFFF">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <rect id="Rectangle" stroke="#B9B9B9" stroke-width="0.5" fill="#FD8C36" x="0.0620757695" y="0.0617170479" width="78.0913181" height="4.81392974" rx="2.40696487"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Feature_3" transform="translate(131.000000, 0.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-7"></use>
+                </g>
+                <g id="Group" transform="translate(10.392265, 5.441176)">
+                    <g id="paragraph/1col" transform="translate(0.000000, 8.146650)" fill="#D8D8D8" fill-rule="nonzero">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="4.11446987" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="8.22893972" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="12.3434096" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="16.4578795" width="57.8997632" height="2.05723493"></rect>
+                        </g>
+                    </g>
+                    <g id="Field">
+                        <g id="path-2-link" fill="#FFFFFF">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <rect id="Rectangle" stroke="#B9B9B9" stroke-width="0.5" fill="#7344F5" x="0.0620757695" y="0.0617170479" width="78.0913181" height="4.81392974" rx="2.40696487"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Feature_3-Copy" transform="translate(268.000000, 27.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-9"></use>
+                </g>
+                <g id="Group" transform="translate(10.392265, 5.441176)">
+                    <g id="paragraph/1col" transform="translate(0.000000, 8.146650)" fill="#D8D8D8" fill-rule="nonzero">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="4.11446987" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="8.22893972" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="12.3434096" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="16.4578795" width="57.8997632" height="2.05723493"></rect>
+                        </g>
+                    </g>
+                    <g id="Field">
+                        <g id="path-2-link" fill="#FFFFFF">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <rect id="Rectangle" stroke="#B9B9B9" stroke-width="0.5" fill="#369BFD" x="0.0620757695" y="0.0617170479" width="78.0913181" height="4.81392974" rx="2.40696487"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Feature_3-Copy-3" transform="translate(268.000000, 134.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-11"></use>
+                </g>
+                <g id="Group" transform="translate(10.392265, 5.441176)">
+                    <g id="paragraph/1col" transform="translate(0.000000, 8.146650)" fill="#D8D8D8" fill-rule="nonzero">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="4.11446987" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="8.22893972" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="12.3434096" width="78.2154696" height="2.05723493"></rect>
+                            <rect id="Rectangle" x="0" y="16.4578795" width="57.8997632" height="2.05723493"></rect>
+                        </g>
+                    </g>
+                    <g id="Field">
+                        <g id="path-2-link" fill="#FFFFFF">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <g id="path-2-link" fill="#000000" fill-rule="nonzero">
+                            <rect id="path-2" x="0" y="0" width="78.2154696" height="4.93736383" rx="2.46868192"></rect>
+                        </g>
+                        <rect id="Rectangle" stroke="#B9B9B9" stroke-width="0.5" fill="#7FD973" x="0.0620757695" y="0.0617170479" width="78.0913181" height="4.81392974" rx="2.40696487"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

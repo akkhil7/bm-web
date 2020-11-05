@@ -1,14 +1,60 @@
+<script>
+export default {
+  computed: {
+    supportedBrowsers() {
+      return ['chrome', 'firefox', 'edge']
+    },
+    browserName() {
+      return this.$detectBrowser
+    },
+    downloadMsg() {
+      switch (this.browserName) {
+        case 'chrome':
+          return 'Add to Chrome'
+        case 'firefox':
+          return 'Add to Firefox'
+        case 'edge':
+          return 'Add to Edge'
+        default:
+          return 'Your browser is not supported by Markie'
+      }
+    },
+  },
+  methods: {
+    onDownloadClick() {
+      switch (this.browserName) {
+        case 'chrome':
+          window.open(process.env.CHROME_EXT_LINK, '_blank')
+          break
+        case 'firefox':
+          window.open(process.env.MOZ_EXT_LINK, '_blank')
+          break
+        case 'edge':
+          window.open(process.env.EDGE_EXT_LINK, '_blank')
+          break
+        default:
+      }
+    },
+  },
+}
+</script>
 <template>
   <section class="wrapper section">
     <div class="container">
       <div class="columns is-multiline is-vcentered">
         <div class="cta column is-10 is-offset-1">
-            <div class="cta--triangles"></div>
-            <div class="container">
-              <h1 class="title cta--title">Get started with Markie AI</h1>
-              <p class="subtitle cta--subtitle">Take bookmarking to the next level.</p>
-              <b-button class="cta--btn">Download for Free</b-button>
-            </div>
+          <div class="cta--triangles"></div>
+          <div class="container">
+            <h1 class="title cta--title">Get started with Markie</h1>
+            <p class="subtitle cta--subtitle">
+              Take bookmarking to the next level.
+            </p>
+            <b-button class="cta--btn" @click="onDownloadClick">
+              {{ downloadMsg }}
+              <span class="separator"> | </span>
+              <span class="free-text">it's free </span>
+            </b-button>
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +69,7 @@
   background-attachment: fixed;
   background-size: cover;
   border-radius: 10px;
-  box-shadow: 0 0 40px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
   .container {
     margin: 2em 0;
@@ -34,31 +80,44 @@
   font-size: 2.75em;
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cta--subtitle {
   color: #fff;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cta--btn {
   border: none;
   background-color: white;
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.125);
-  color: #635bff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.125);
+  color: #6030e1;
   font-weight: 600;
+  height: auto;
 }
 
-.cta--btn:hover  {
-  background-color: rgba(255,255,255,0.8);
+.free-text {
+  font-size: 0.8em;
+  font-weight: 400 !important;
+  color: #9d7df5;
+}
+
+.separator {
+  font-size: 1.2em;
+  color: #9d7df5;
+  font-weight: 400;
+}
+
+.cta--btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
   transform: translateY(-1px);
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
   transition: all 250ms ease;
 }
 
 .cta--triangles {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   position: absolute;
