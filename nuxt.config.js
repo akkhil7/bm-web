@@ -1,9 +1,5 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
-  server: {
-    port: process.env.NODE_ENV === 'development' ? 6001 : 80, // default: 3000
-    host: '0.0.0.0', // default: localhost
-  },
   env: {
     BM_APP_URI: process.env.BM_APP_URI,
     STRIPE_PUBLISHABLE_KEY: process.env.STRIPE_PUBLISHABLE_KEY,
