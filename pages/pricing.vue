@@ -1,6 +1,8 @@
 <script>
 import { CURRENT_USER } from '../queries'
 import { CREATE_STRIPE_SESSION } from '~/mutations'
+const PRICE_ID_MONTHLY = process.env.PRICE_ID_MONTHLY
+const PRICE_ID_YEARLY = process.env.PRICE_ID_YEARLY
 export default {
   name: 'Plan',
   data() {
@@ -8,9 +10,9 @@ export default {
       isAnnually: true,
       isMonthly: false,
       showCard: false,
-      priceId: 'price_1HiojaAXJLrsqNECXHJdkTzi',
-      monthlyPriceId: 'price_1Hhzf5AXJLrsqNECzjoBx2to',
-      yearlyPriceId: 'price_1HiojaAXJLrsqNECXHJdkTzi',
+      priceId: PRICE_ID_YEARLY,
+      monthlyPriceId: PRICE_ID_MONTHLY,
+      yearlyPriceId: PRICE_ID_YEARLY,
       isStripeLoaded: false,
       currentUser: null,
       CREATE_STRIPE_SESSION,
