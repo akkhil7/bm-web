@@ -233,7 +233,7 @@ export default {
               </div>
             </div>
             <p class="feature-value">
-              <span class="feature-value-text">15 Smart Bookmarks</span>
+              <span class="feature-value-text">25 Smart Bookmarks</span>
             </p>
             <p class="feature-value">
               <span class="feature-value-text">Unlimited Articles</span>
