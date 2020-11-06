@@ -1,14 +1,20 @@
 <script>
+import {
+  CHROME_EXT_LINK,
+  MOZ_EXT_LINK,
+  EDGE_EXT_LINK,
+} from '~/util/extensionLinks'
+
 export default {
   computed: {
     chromeLink() {
-      return process.env.CHROME_EXT_LINK
+      return CHROME_EXT_LINK
     },
     mozLink() {
-      return process.env.MOZ_EXT_LINK
+      return MOZ_EXT_LINK
     },
     edgeLink() {
-      return process.env.EDGE_EXT_LINK
+      return EDGE_EXT_LINK
     },
     webAppLink() {
       return process.env.BM_APP_URI

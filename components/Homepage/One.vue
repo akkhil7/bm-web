@@ -155,6 +155,12 @@
 </style>
 
 <script>
+import {
+  CHROME_EXT_LINK,
+  MOZ_EXT_LINK,
+  EDGE_EXT_LINK,
+} from '~/util/extensionLinks'
+
 export default {
   computed: {
     supportedBrowsers() {
@@ -187,13 +193,13 @@ export default {
     onDownloadClick() {
       switch (this.browserName) {
         case 'chrome':
-          window.open(process.env.CHROME_EXT_LINK, '_blank')
+          window.open(CHROME_EXT_LINK, '_blank')
           break
         case 'firefox':
-          window.open(process.env.MOZ_EXT_LINK, '_blank')
+          window.open(MOZ_EXT_LINK, '_blank')
           break
         case 'edge':
-          window.open(process.env.EDGE_EXT_LINK, '_blank')
+          window.open(EDGE_EXT_LINK, '_blank')
           break
         default:
       }

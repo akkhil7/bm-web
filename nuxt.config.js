@@ -3,9 +3,6 @@ export default {
   env: {
     BM_APP_URI: process.env.BM_APP_URI,
     STRIPE_PUBLISHABLE_KEY: process.env.STRIPE_PUBLISHABLE_KEY,
-    CHROME_EXT_LINK: process.env.CHROME_EXT_LINK,
-    MOZ_EXT_LINK: process.env.MOZ_EXT_LINK,
-    EDGE_EXT_LINK: process.env.EDGE_EXT_LINK,
     PRICE_ID_MONTHLY: process.env.PRICE_ID_MONTHLY,
     PRICE_ID_YEARLY: process.env.PRICE_ID_YEARLY,
   },
