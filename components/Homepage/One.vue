@@ -55,6 +55,10 @@
   );
 }
 
+.container {
+  width: 100%;
+}
+
 .sign-in-btn {
   background-color: rgba(255, 255, 255, 0.1) !important;
   font-weight: 600;
@@ -104,11 +108,19 @@
   border: 1px solid transparent;
   border-radius: 0.25rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+  width: 100%;
+  @media (min-width: 600px) {
+    width: auto;
+  }
 }
 
 .no-support-btn {
   background-color: white;
   color: #6030e1;
+  font-size: 0.8em;
+  @media (min-width: 600px) {
+    font-size: 1em;
+  }
 }
 
 .download-btn {
@@ -127,6 +139,13 @@
 .get-markie-btn:active,
 .get-markie-btn:hover {
   background-color: #fa6400 !important;
+}
+
+.no-support-btn:active,
+.no-support-btn:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+  color: #6030e1 !important;
+  filter: brightness(0.8);
 }
 
 .hero-body {
