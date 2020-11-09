@@ -184,6 +184,17 @@ export default {
               </b-tooltip>
             </div>
             <div class="feature-label">
+              Standard Bookmarks
+              <b-tooltip type="is-white" position="is-top" multilined>
+                <div class="help-circle">?</div>
+                <template v-slot:content>
+                  If the webpage cannot be parsed, then it will be saved as a
+                  standard bookmark. This will not deplete your smart bookmarks
+                  quota.
+                </template>
+              </b-tooltip>
+            </div>
+            <div class="feature-label">
               Article View
               <b-tooltip type="is-white" position="is-top" multilined>
                 <div class="help-circle">?</div>
@@ -223,7 +234,7 @@ export default {
                 </template>
               </b-tooltip>
             </div>
-            <p class="feature-label">Ad-free experience</p>
+            <!-- <p class="feature-label">Ad-free experience</p> -->
           </div>
           <div class="column is-4">
             <div class="price-wrapper">
@@ -233,7 +244,12 @@ export default {
               </div>
             </div>
             <p class="feature-value">
-              <span class="feature-value-text">25 Smart Bookmarks</span>
+              <span class="feature-value-text">100 Smart Bookmarks</span>
+            </p>
+            <p class="feature-value">
+              <span class="feature-value-text"
+                >Unlimited Standard Bookmarks</span
+              >
             </p>
             <p class="feature-value">
               <span class="feature-value-text">Unlimited Articles</span>
@@ -250,11 +266,11 @@ export default {
               </b-icon>
               <span> &nbsp;</span>
             </p>
-            <p class="feature-value">
+            <!-- <p class="feature-value">
               <b-icon size="is-medium" type="is-danger" icon="close-thick">
               </b-icon>
               <span> &nbsp;</span>
-            </p>
+            </p> -->
             <p class="feature-value buy-btn">
               <b-button type="is-primary" @click="onClickBasic">
                 {{ isFreeBtnText }}
@@ -275,6 +291,11 @@ export default {
               <span class="feature-value-text">Unlimited Smart Bookmarks</span>
             </p>
             <p class="feature-value">
+              <span class="feature-value-text"
+                >Unlimited Standard Bookmarks</span
+              >
+            </p>
+            <p class="feature-value">
               <!-- <b-icon size="is-medium" type="is-primary" icon="check-bold"> </b-icon> -->
               <span class="feature-value-text">Unlimited Articles</span>
             </p>
@@ -292,11 +313,11 @@ export default {
               </b-icon>
               <span> &nbsp;</span>
             </p>
-            <p class="feature-value">
+            <!-- <p class="feature-value">
               <b-icon size="is-medium" type="is-light" icon="check-bold">
               </b-icon>
               <span> &nbsp;</span>
-            </p>
+            </p> -->
             <ApolloMutation
               v-if="currentUser"
               :style="{ width: '100%' }"
