@@ -96,7 +96,7 @@ export default {
 <template>
   <div v-if="loading">
     <b-loading
-      :is-full-page="true"
+      :is-full-page="false"
       :active.sync="loading"
       :can-cancel="false"
     />
