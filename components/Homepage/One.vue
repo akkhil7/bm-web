@@ -121,15 +121,6 @@
   }
 }
 
-.no-support-btn {
-  background-color: white;
-  color: #6030e1;
-  font-size: 0.8em;
-  @media (min-width: 600px) {
-    font-size: 1em;
-  }
-}
-
 .download-btn {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -217,6 +208,8 @@ export default {
           window.open(EDGE_EXT_LINK, '_blank')
           break
         default:
+          this.$router.push('installation')
+          break
       }
     },
   },

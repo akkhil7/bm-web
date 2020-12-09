@@ -22,7 +22,7 @@ export default {
         case 'edge':
           return 'Add to Edge'
         default:
-          return 'Your browser is not supported by Markie'
+          return 'Download'
       }
     },
   },
@@ -39,6 +39,8 @@ export default {
           window.open(EDGE_EXT_LINK, '_blank')
           break
         default:
+          this.$router.push('installation')
+          break
       }
     },
   },
