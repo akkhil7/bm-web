@@ -94,14 +94,7 @@ export default {
 }
 </script>
 <template>
-  <div v-if="loading">
-    <b-loading
-      :is-full-page="false"
-      :active.sync="loading"
-      :can-cancel="false"
-    />
-  </div>
-  <header v-else :class="className">
+  <header :class="className">
     <div class="container">
       <div class="navbar-brand">
         <img src="~assets/icon_128.png" class="logo" alt="Logo" />
@@ -127,6 +120,7 @@ export default {
             <b-button
               class="navbar-item sign-in-btn"
               @click="onClickSignInOrDashboard"
+              :loading="loading"
             >
               {{ signInOrDashboard }}
             </b-button>
