@@ -14,24 +14,37 @@
               for everyone
             </h1>
             <mq-layout mq="hd+">
-              <b-button :class="downloadButtonStyle" @click="onDownloadClick">
+              <b-button
+                size="is-large"
+                class="get-markie-btn"
+                @click="onDownloadClick"
+              >
                 {{ downloadMsg }} →</b-button
               >
             </mq-layout>
           </div>
           <div class="column is-12-tablet is-6-desktop preview-container">
-            <img
-              src="~assets/Demo_1.svg"
+            <video
+              playsinline=""
+              autoplay=""
+              muted=""
+              loop=""
+              preload="auto"
               class="demo-img"
-              alt="Markie AI Preview"
-            />
+            >
+              <source type="video/mp4" src="~assets/demo.mp4" />
+            </video>
           </div>
           <div class="column is-12-tablet is-6-desktop">
             <mq-layout
               :style="{ textAlign: 'center' }"
               :mq="['sm', 'md', 'lg']"
             >
-              <b-button :class="downloadButtonStyle" @click="onDownloadClick">
+              <b-button
+                size="is-large"
+                class="get-markie-btn"
+                @click="onDownloadClick"
+              >
                 {{ downloadMsg }} →</b-button
               >
             </mq-layout>
@@ -46,13 +59,7 @@
 .bg-gradient {
   position: relative;
   overflow: hidden;
-  background-color: #523a78;
-  background-image: linear-gradient(
-    316deg,
-    #635bff 0%,
-    #552fbc 14%,
-    #190f26 90%
-  );
+  background-color: #fff;
 }
 
 .container {
@@ -74,7 +81,7 @@
   margin-left: -1.5rem;
   position: absolute;
   margin-top: -3em;
-  opacity: 0.5;
+  opacity: 0.06;
 }
 
 @keyframes slide {
@@ -149,18 +156,14 @@
 }
 
 .hero-body {
-  .title,
-  .subtitle {
-    color: white;
-  }
   .title {
-    font-size: 3em;
+    font-size: 2.8em;
     text-align: center;
     @media (min-width: 768px) {
       font-size: 4em;
     }
     @media (min-width: 1024px) {
-      font-size: 5em;
+      font-size: 4.5em;
       text-align: left;
     }
   }
@@ -197,14 +200,7 @@ export default {
         case 'edge':
           return 'Download for Edge'
         default:
-          return 'Your browser is not supported by Markie'
-      }
-    },
-    downloadButtonStyle() {
-      if (this.supportedBrowsers.includes(this.browserName)) {
-        return 'get-markie-btn'
-      } else {
-        return 'get-markie-btn no-support-btn'
+          return 'Download'
       }
     },
   },

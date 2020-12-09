@@ -42,6 +42,48 @@
     </div>
     <div class="container">
       <div class="columns is-multiline is-vcentered">
+        <div class="column is-12 cta-text">
+          <h1 class="title">
+            A beautiful interface to access and manage your bookmarks easily.
+          </h1>
+          <p class="subtitle">
+            You can filter and search through your bookmarks and access them
+            even faster.
+          </p>
+        </div>
+        <div class="column is-8 is-offset-2">
+          <video
+            playsinline=""
+            autoplay=""
+            muted=""
+            loop=""
+            preload="auto"
+            class="demo-img"
+          >
+            <source type="video/mp4" src="~assets/manage_bookmarks.mp4" />
+          </video>
+        </div>
+        <div class="column is-12 cta-text">
+          <h1 class="title">
+            Introducing bookmark recommendations
+            <b-tag class="pro-tag">PRO</b-tag>
+          </h1>
+          <p class="subtitle">
+            View similar bookmarks right when you bookmark a page.
+          </p>
+        </div>
+        <div class="column is-8 is-offset-2">
+          <video
+            playsinline=""
+            autoplay=""
+            muted=""
+            loop=""
+            preload="auto"
+            class="demo-img"
+          >
+            <source type="video/mp4" src="~assets/similar_bookmarks.mp4" />
+          </video>
+        </div>
         <div
           v-for="(item, index) in items"
           :key="index"
@@ -53,6 +95,7 @@
             :title="item.title"
             :subtitle="item.subtitle"
             :is-pro="item.isPro"
+            :isVideo="item.isVideo"
           />
         </div>
       </div>
@@ -102,8 +145,10 @@
 
 <style lang="scss" scoped>
 .wrapper {
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
+  .cta-text {
+    text-align: center;
+  }
 }
 .bg-square {
   position: relative;
@@ -137,42 +182,35 @@
   margin-top: 4em;
   margin-bottom: 4em;
 }
+.demo-img {
+  margin: 2em 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
 </style>
 
 <script>
-import Feature1 from '../../assets/Feature_1.svg'
-import Feature2 from '../../assets/Feature_2.svg'
-import Feature3 from '../../assets/Feature_3.svg'
-import Feature4 from '~/assets/Feature_4.svg'
+import Feature3 from '../../assets/Feature_3.png'
+import Feature2 from '~/assets/Highlight.mp4'
 
 export default {
   data() {
     return {
       items: [
         {
-          img: Feature1,
-          title: 'Smart Bookmarks',
-          subtitle: `Your bookmarks are automatically categorized and tagged using Artificial Intelligence.`,
-          isPro: false,
-        },
-        {
-          img: Feature4,
-          title: 'Bookmark Recommendations',
-          subtitle: `Markie shows you similar bookmarks when you bookmark a page. You will probably forget about the bookmark you saved ages ago but Markie won't 😉.`,
+          img: Feature3,
+          title: 'Smart Import',
+          subtitle: `Markie will take your already existing bookmarks from <strong>Browser</strong> or <strong>Pocket</strong> and try to convert them to smart bookmarks.`,
           isPro: true,
+          isVideo: false,
         },
         {
           img: Feature2,
-          title: 'Article View',
+          title: 'Article View & Highlighting',
           subtitle: `Markie converts your bookmarks into text-only mode for later reading. 
           You can also highlight important portions of the page in this mode.`,
           isPro: false,
-        },
-        {
-          img: Feature3,
-          title: 'Filtering & Searching',
-          subtitle: `You can search for your bookmark by its tag, category or even a keyword.`,
-          isPro: false,
+          isVideo: true,
         },
       ],
     }

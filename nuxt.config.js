@@ -15,11 +15,12 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Markie takes care of bookmarking for you with automatic categorisation, automatic tagging, highlighting and much more. Sign up for free today.',
+          'Markie takes care of bookmarking for you with automatic categorisation, tagging, recommendations, highlighting and much more. Sign up for free today.',
       },
       {
         name: 'keywords',
-        content: 'bookmarking, tagging, bookmarks, categorize, highlight',
+        content:
+          'bookmarking, tagging, bookmarks, categorize, highlight, pocket alternative, instapaper alternative',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

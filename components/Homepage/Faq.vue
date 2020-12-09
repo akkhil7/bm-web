@@ -11,7 +11,7 @@
             You can use Markie by installing the Markie browser extension for
             your browser.
           </p>
-          <p class="question">Which are the browsers that you support?</p>
+          <p class="question">Which browsers do you support?</p>
           <p class="answer">
             Currently, we are providing support for Chrome, Firefox and Edge
             (latest version). <br />
@@ -19,10 +19,9 @@
           </p>
           <p class="question">Should I be worried about security or privacy?</p>
           <p class="answer">
-            No, you need not worry about your data being monitored or stored in
-            our servers. However, only when you bookmark is when Markie captures
-            the text content of the page (if there is any) and stores it
-            securely in the cloud.
+            No, you need not worry about your browsing data being monitored or
+            stored in our servers. Markie captures and sends the HTML of the
+            page to our secure server only when you bookmark.
           </p>
           <p class="question">Where can I view my bookmarks?</p>
           <p class="answer">
@@ -33,9 +32,8 @@
           <p class="question">Do you have a free version?</p>
           <p class="answer">
             Yes, we have a pretty decent free version with most of the major
-            features. We also have a trial version for Markie Pro. Head over to
-            the <NuxtLink to="/pricing"> pricing page </NuxtLink> for more
-            details.
+            features. Head over to the
+            <NuxtLink to="/pricing"> pricing page </NuxtLink> for more details.
           </p>
           <p class="question">Can Markie sync with my browser bookmarks?</p>
           <p class="answer">

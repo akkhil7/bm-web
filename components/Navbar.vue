@@ -119,7 +119,7 @@ export default {
       <transition name="nav-slide">
         <div v-show="shouldShowMenu" id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active" @click="smoothScroll('features')">
+            <a class="navbar-item" @click="smoothScroll('features')">
               Features
             </a>
             <NuxtLink to="/pricing" class="navbar-item">Pricing</NuxtLink>
@@ -149,13 +149,12 @@ export default {
 
 .navbar-menu {
   .navbar-item {
-    color: #fff;
     margin: 0.5em;
     background-color: transparent;
+    font-weight: 600;
   }
   .navbar-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    color: #6030e1;
   }
 }
 
@@ -164,7 +163,6 @@ export default {
   transition: background-color 200ms ease;
   top: 0;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   padding: 1em;
   overflow: hidden;
@@ -174,7 +172,7 @@ export default {
     border-radius: 5px;
     margin: 1em;
     background-color: transparent;
-    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.2);
     @media (min-width: 1024px) {
       padding: 0;
       margin: 0;
@@ -185,7 +183,7 @@ export default {
     span {
       height: 2px;
       width: 20px;
-      color: white !important;
+      color: black !important;
     }
 
     color: white !important;
@@ -217,13 +215,12 @@ export default {
 .logo--text {
   font-size: 24px;
   font-weight: 600;
-  color: white;
+  color: #363636;
   margin-left: 0.5em;
 }
 .inverse {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 40px 20px rgba(30, 19, 45, 0.05);
-  backdrop-filter: blur(10px);
   .logo {
     box-shadow: none;
   }
