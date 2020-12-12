@@ -112,6 +112,9 @@ export default {
       <transition name="nav-slide">
         <div v-show="shouldShowMenu" id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
+            <b-tag class="announcement" type="is-success is-light"
+              >Free PRO Membership for 1 year</b-tag
+            >
             <a class="navbar-item" @click="smoothScroll('features')">
               Features
             </a>
@@ -135,6 +138,11 @@ export default {
 .navbar-menu {
   display: flex;
   align-items: center;
+}
+.navbar-end {
+  @media (min-width: 1024px) {
+    align-items: center;
+  }
 }
 
 .not-fixed {
@@ -198,6 +206,16 @@ export default {
   background-color: rgba(255, 255, 255, 0.1) !important;
   font-weight: 600;
   border: none;
+}
+
+.announcement {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    background-color: #cbf4c9 !important;
+    color: #0e6245 !important;
+    font-weight: bold;
+  }
 }
 
 .logo {
