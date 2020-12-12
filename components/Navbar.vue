@@ -35,6 +35,9 @@ export default {
     signInOrDashboard() {
       return !this.currentUser ? 'Sign In' : 'Dashboard'
     },
+    isPricingPage() {
+      return this.$route.name === 'pricing'
+    },
   },
   mounted() {
     this.loading = true
@@ -112,7 +115,10 @@ export default {
       <transition name="nav-slide">
         <div v-show="shouldShowMenu" id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
-            <b-tag class="announcement" type="is-success is-light"
+            <b-tag
+              v-show="!isPricingPage"
+              class="announcement"
+              type="is-success is-light"
               >Free PRO Membership for 1 year</b-tag
             >
             <a class="navbar-item" @click="smoothScroll('features')">

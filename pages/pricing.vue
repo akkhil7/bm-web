@@ -170,6 +170,13 @@ export default {
             <p class="info">Save upto 16% by paying annually</p>
           </div>
         </div>
+        <div class="columns">
+          <div class="column is-4 is-offset-8">
+            <b-tag class="announcement" type="is-success is-light"
+              >Free PRO Membership for 1 year</b-tag
+            >
+          </div>
+        </div>
         <div class="columns is-gapless is-multiline plan-wrapper">
           <div class="column is-4 feature-list">
             <div class="price-wrapper"></div>
@@ -355,6 +362,16 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.announcement {
+  display: flex;
+  background-color: #cbf4c9 !important;
+  color: #0e6245 !important;
+  font-weight: bold;
+  @media (min-width: 768px) {
+    transform: translateX(-16px);
+  }
+}
+
 .center {
   justify-content: center;
   text-align: center;
